@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txv_nome_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Exercicio 3\nLei de Ohm"
+        android:textColor="#D54D7C"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_tensao"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:hint="Digite a tensão"
+        android:inputType="number|numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txv_nome_app" />
+
+    <EditText
+        android:id="@+id/edt_resistencia"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Digite a resistencia"
+        android:inputType="number|numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_tensao" />
+
+    <EditText
+        android:id="@+id/edt_corrente"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Digite a corrente"
+        android:inputType="number|numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_resistencia" />
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#D54D7C"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_corrente" />
+
+    <TextView
+        android:id="@+id/txv_resultado"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calcular" />
+
+    <TextView
+        android:id="@+id/txv_instrucao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Por favor digite ao menos 2 valores."
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_tensao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txv_nome_app" />
+
+    <TextView
+        android:id="@+id/txv_desc_tensao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tensão (V)"
+        app:layout_constraintBottom_toTopOf="@+id/edt_tensao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txv_desc_resistencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resistencia (R)"
+        app:layout_constraintBottom_toTopOf="@+id/edt_resistencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txv_desc_corrente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Corrente (I)"
+        app:layout_constraintBottom_toTopOf="@+id/edt_corrente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
