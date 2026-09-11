@@ -1,0 +1,7 @@
+1.Crie um aplicativo que exiba uma lista de seus filmes favoritos. Permita que o
+usuário adicione novos filmes (título e diretor) e utilize um RecyclerView para exibir
+a lista dinamicamente. Utilize diferentes tipos de LayoutManager Exemplo formato Grid.
+
+2.Implemente um App para registrar tarefas. O usuário poderá inserir o nome e a
+descrição de cada tarefa. Utilize um RecyclerView para exibir as tarefas e adicione
+um botão em cada item da lista para marcar a tarefa como concluída.
